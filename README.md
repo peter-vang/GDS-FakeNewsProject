@@ -27,13 +27,17 @@ Place the file `995,000_rows.csv` in the same folder as the code file. This data
 ## Usage
 It is a computationally heavy task to clean and pre-process the entire 995k row dataset, so it is highly beneficial to only do this once. If you wish to run the code more than once we suggest to save the cleaned dataset to a file that can then be re-read much faster. In order to vary between running the code the first time and all others we have a few lines that need to be commented our and uncommented again. Before running the code for the first time, please follow these steps:
 
-1. Uncomment and run the following block to clean, process, and save the entire corpus ONLY the first time you run the code. Note that this step might take approximately 30-40 minutes to complete:
+1. Run the following block to clean, process, and save the entire corpus ONLY the first time you run the code. Note that this step might take approximately 30-40 minutes to complete:
     ```python
     # Clean, process, and analyze entire corpus
     numbers, urls, dates, top_100_words, top_1000_dic, top_100_words_v2, top_1000_dic_v2 = clean_and_analyze(dataframe_v03)
     dataframe_v03.to_csv('full_dataframe')
     dataframe_v04 = dataframe_v03.copy()
     print(f"The number of numbers, URLs, and dates are: numbers: {numbers}, URLs: {urls}, and dates: {dates}") # Uncomment when running the first time
+    print("The top 100 most frequent words before removals are") # Comment out after running the first time
+    print(f"{top_100_words}") #Comment out after running the first time
+    print("The top 100 most frequent words after removals are") #Comment out after running the first time
+    print(f"{top_100_words_v2}") # Comment out after running the first time
     ```
 
 2. Additionally, run the following line to apply further processing to the content column. Again ONLY during the first run:
