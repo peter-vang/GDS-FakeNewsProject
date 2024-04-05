@@ -1,7 +1,7 @@
 # Fake News Project 
 
 ## Introduction
-This repository contains the code used in data processing, modelling and evaluation of our Fake News Predictor. We have collected all of our final code in the Jupyter notebook file "Fake News Project.ipynb". This is the file, that the below instructions are meant to help reproduce. In addition, we have included files that contain code in which we have experimented with alternative techniques for data processing and modelling. The results from these files can be reproduced, but this README does not detail how this is done.  Below, you'll find instructions on how to set up your environment, run the code for the final code used to generate the results presented in our report available in "Fake News Project.ipynb".
+This repository contains the code used in data processing, modelling and evaluation of our Fake News Predictor. We have collected all of our final code in the Jupyter notebook file **"Fake News Project.ipynb"**. This is the file, that the below instructions are meant to help reproduce. In addition, we have included files that contain code in which we have experimented with alternative techniques for data processing and modelling. The results from these files can be reproduced, but this README does not detail how this is done.  Below, you'll find instructions on how to set up your environment, run the code for the final code used to generate the results presented in our report available in "Fake News Project.ipynb".
 
 ## Installation
 To ensure compatibility and manage dependencies, we recommend creating a virtual environment for this project. After cloning the repository, navigate to the project directory and follow these steps:
