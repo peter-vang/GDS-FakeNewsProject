@@ -22,12 +22,12 @@ To ensure compatibility and manage dependencies, we recommend creating a virtual
     ```
 
 ## Data Preparation
-Place the file `995,000_rows.csv` in the same folder as the code file. This dataset contains the articles that will be used for training and testing the model and can be downloaded from Canvas
+Place the file `995,000_rows.csv` in the same folder as the code file. This dataset contains the articles that will be used for training and testing the model and can be downloaded from Canvas. In addition, place the file 'test.tsv' contaning the test data from the LIAR dataset in the same repository
 
 ## Usage
 It is a computationally heavy task to clean and pre-process the entire 995k row dataset, so it is highly beneficial to only do this once. If you wish to run the code more than once we suggest to save the cleaned dataset to a file that can then be re-read much faster. In order to vary between running the code the first time and all others we have a few lines that need to be commented our and uncommented again. Before running the code for the first time, please follow these steps:
 
-1. Uncomment and run the following block to clean, process, and save the entire corpus ONLY the first time you run the code. Note that this step might take approximately 30-40 minutes to complete:
+1. Run the following block to clean, process, and save the entire corpus ONLY the first time you run the code. Note that this step might take approximately 30-40 minutes to complete:
     ```python
     # Clean, process, and analyze entire corpus
     numbers, urls, dates, top_100_words, top_1000_dic, top_100_words_v2, top_1000_dic_v2 = clean_and_analyze(dataframe_v03)
